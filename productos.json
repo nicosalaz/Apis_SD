@@ -1,0 +1,25 @@
+{
+    "productos":[
+        {
+        "prod_id": "02154",
+        "nombre_proc": "Pastel",
+        "valor" : 4000
+        },
+        {
+        "prod_id": "2458",
+        "nombre_proc": "Colombiana",
+        "valor" : 1000
+        },
+        {
+        "prod_id": "325",
+        "nombre_proc": "Chicle",
+        "valor" : 3000
+        },
+        {
+        "prod_id": "1258",
+        "nombre_proc": "Bombom",
+        "valor" : 800
+        }
+    ],
+    "id_cliente":462
+}
