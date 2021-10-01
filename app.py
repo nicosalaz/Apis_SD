@@ -111,13 +111,12 @@ def productos():
         respuesta = {"Respuesta": f"el usuario con codigo {id_cliente} no existe"}
     return jsonify(respuesta)
 
-@app.route("/apis/compra", methods=["POST"])
+@app.route("/apis/compra", methods=["GET"])
 def compra():
     global compras
     """ Return a friendly HTTP greeting. """
     respuesta = {}
-    json = request.get_json()
-    codigo_compra = json["codigo_compra"]
+    codigo_compra = int(request.args.get("codigo_compra",0))
     if (codigo_compra in compras):
          respuesta = {"Informacion": f"la informacion de la compra con codigo {codigo_compra} es : "+
                                         f"{compras[codigo_compra][0]}   Total: ${compras[codigo_compra][1]}  "
